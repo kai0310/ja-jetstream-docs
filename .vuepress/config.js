@@ -15,9 +15,9 @@ module.exports = {
 
         repo: 'laravel/jetstream',
 
-        docsRepo: 'laravel/jetstream-docs',
+        docsRepo: 'kai0310/ja-jetstream-docs',
         editLinks: true,
-        editLinkText: 'Help us improve this page!',
+        editLinkText: 'この日本語ドキュメントを改善する',
 
         nav: [
             { text: 'Home', link: '/', target: '_self' },

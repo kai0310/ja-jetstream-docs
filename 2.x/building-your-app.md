@@ -1,12 +1,14 @@
-# Building Your App
+# アプリケーションを構築する
 
 [[toc]]
 
 ## Introduction
 
-After installing Jetstream, you may wonder how to actually start building your application. Thankfully, since Jetstream handles the configuration of all of the initial authentication and application scaffolding, you can get started right away!
+Jetstream のインストールを終えた後, 実際にアプリケーションを構築するにはどのようにすればいいか疑問を持つかもしれません. ありがたいことに, Jetstreamでは, 初期の認証やアプリケーションのスキャフォールドとなる部分の設定をすべて行うので, すぐに始まることができます!
 
-After installing Jetstream, the code is yours. The templates belong to your application and can be modified as you see fit. Jetstream is just a starting point. You do not need to worry about keeping your user interface "compatible" with future Jetstream releases because each Jetstream release is simply an entirely new iteration of the starter kit. In other words, Jetstream is not a package or administration dashboard that you will "update" in the future. It is a starter kit scaffolding for Laravel and, after it is installed, the templates are entirely yours to maintain.
+Jetstream をインストールすると, Jetstream のコードはあなたのものとなります. Jetstream のテンプレートはあなたのアプリケーションの中にあるため, 自由にカスタマイズすることができます. Jetstream は単なる出発点にすぎません. Jetstream のリリースは, You do not need to worry about keeping your user interface "compatible" with future Jetstream releases because each Jetstream release is simply an entirely new iteration of the starter kit.
+言い換えれば, Jetstream は, 将来的に "アップデート" するものは, パッケージや管理用ダッシュボードではありません.
+これは Laravel のスターターキットの足場となるものであり, インストールした後のテンプレートの維持管理はすべてあなたのものです。
 
 :::tip Livewire & Inertia
 

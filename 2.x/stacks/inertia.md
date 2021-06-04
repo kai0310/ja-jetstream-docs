@@ -1,5 +1,9 @@
 # Inertia
 
+:::danger 未翻訳のセクション
+このセクションは, まだ翻訳ができていません。
+:::
+
 [[toc]]
 
 ## Introduction

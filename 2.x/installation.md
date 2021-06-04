@@ -1,25 +1,26 @@
-# Installation
+# インストール
 
 [[toc]]
 
-## Installing Jetstream
+## Jetstream のインストール
 
-You may use Composer to install Jetstream into your new Laravel project:
+Composer を用いて, Jetstream を新しい Laravel のプロジェクトにインストールすることができます:
 
 ```bash
 composer require laravel/jetstream
 ```
 
-After installing the Jetstream package, you may execute the `jetstream:install` Artisan command. This command accepts the name of the stack you prefer (`livewire` or `inertia`). In addition, you may use the `--teams` switch to enable team support. The `jetstream:install` command will also install a suite of "feature" tests that provide test coverage for the features provided by Jetstream. 
+Composer を用いて Jetstream パッケージをインストールした後, 次の Artisan コマンド `jetstream:install` を実行することができます. このコマンドは, 希望するフロントエンドスタックの名前 (`livewire` or `inertia`)　を指定します. また, you may use the `--teams` switch to enable team support. 
+The `jetstream:install` command will also install a suite of "feature" tests that provide test coverage for the features provided by Jetstream. 
 
 **You are highly encouraged to read through the entire documentation of [Livewire](https://laravel-livewire.com) or [Inertia](https://inertiajs.com) before beginning your Jetstream project.**
 
-:::danger New Applications Only
+:::danger 新しいアプリケーションのみ
 
-Jetstream should only be installed into new Laravel applications. Attempting to install Jetstream into an existing Laravel application will result in unexpected behavior and issues.
+Jetstream は, 新しい Laravel アプリケーションのみにインストールを行ってください. 既存の Laravel アプリケーションにインストールを行おうとすると, 予期せぬ動作や問題が発生します.
 :::
 
-#### Install Jetstream With Livewire
+#### Livewire を選択し, Jetstream をインストール
 
 ```bash
 php artisan jetstream:install livewire
@@ -27,7 +28,7 @@ php artisan jetstream:install livewire
 php artisan jetstream:install livewire --teams
 ```
 
-#### Or, Install Jetstream With Inertia
+#### Inertia を選択し, Jetstream をインストール
 
 ```bash
 php artisan jetstream:install inertia
@@ -35,9 +36,9 @@ php artisan jetstream:install inertia
 php artisan jetstream:install inertia --teams
 ```
 
-### Finalizing The Installation
+### インストールの最後
 
-After installing Jetstream, you should install and build your NPM dependencies and migrate your database:
+Jetstream のインストールが完了したら, NPM の依存関係をインストール・構築し, データベースを migrate してください:
 
 ```bash
 npm install
@@ -45,25 +46,26 @@ npm run dev
 php artisan migrate
 ```
 
-## Application Logo
+## アプリケーションのロゴ
 
-After installing Jetstream, you may have noticed that the Jetstream logo is utilized on Jetstream's authentication pages as well as your application's top navigation bar. You may easily customize the logo by modifying two Jetstream components.
+Jetstream のインストールが終わると, Jetstream の認証ページやアプリケーションの上部のナビゲーションバーに Jetstream のロゴが使用されていることに気づくでしょう. このロゴは, Jetstream の2つのコンポーネントを変更することで簡単にカスタマイズできます。
+
 
 ### Livewire
 
-If you are using the Livewire stack, you should first publish the Livewire stack's Blade components:
+フロントエンドスタックとして, Livewire を使用している場合は, まず Livewire の Blade コンポーネントを公開する必要があります:
 
 ```bash
 php artisan vendor:publish --tag=jetstream-views
 ```
 
-Next, you should customize the SVGs located in the `resources/views/vendor/jetstream/components/application-logo.blade.php`, `resources/views/vendor/jetstream/components/authentication-card-logo.blade.php`, and `resources/views/vendor/jetstream/components/application-mark.blade.php` components.
+次に, 次の場所にある SVG をカスタマイズする必要があります. `resources/views/vendor/jetstream/components/application-logo.blade.php`, `resources/views/vendor/jetstream/components/authentication-card-logo.blade.php`, と `resources/views/vendor/jetstream/components/application-mark.blade.php` コンポーネントです.
 
 ### Inertia
 
-If you are using the Inertia stack, you should customize the SVGs located in `resources/js/Jetstream/AuthenticationCardLogo.vue`, `resources/js/Jetstream/ApplicationLogo.vue`, and `resources/js/Jetstream/ApplicationMark.vue`.
+フロントエンドスタックとして Inertia を使用している場合は, 次の場所にある SVG をカスタマイズしてください. `resources/js/Jetstream/AuthenticationCardLogo.vue`, `resources/js/Jetstream/ApplicationLogo.vue`, と `resources/js/Jetstream/ApplicationMark.vue`.
 
-After customizing these components, you should rebuild your assets:
+これらのコンポーネントをカスタマイズした後, assets を再構築する必要があります: 
 
 ```bash
 npm run dev

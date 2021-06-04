@@ -1,4 +1,4 @@
-# Concept Overview
+# コンセプト概要
 
 [[toc]]
 
